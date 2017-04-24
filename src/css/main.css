@@ -1,0 +1,926 @@
+/*页面样式*/
+
+
+/*
+基本默认值
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    color: #222;
+}
+
+
+/*选中文字的效果*/
+
+::-moz-selection {
+    background-color: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background-color: #b3d4fc;
+    text-shadow: none;
+}
+
+
+/*无序列表样式*/
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.clearfix::after, .clearfix::before {
+    content: " ";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+
+/*浏览器更新提示*/
+
+.browserupgrade {
+    margin: 0;
+    padding: 1rem;
+    background: #ccc;
+}
+
+
+/*自定义页面样式*/
+
+body {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    background-color: #f7f7f7;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: #0ae;
+}
+
+
+/*网站头部*/
+
+header {
+    width: 100%;
+}
+
+header .top {
+    height: 3rem;
+    line-height: 3rem;
+    padding: 0 3rem;
+    color: #fff;
+    background: #555;
+    border-bottom: 1px solid #ecc000;
+}
+
+header .top .tel {
+    float: left;
+}
+
+header .top ul {
+    float: right;
+}
+
+header .top ul li {
+    float: left;
+}
+
+header .top ul li+li {
+    border-left: 1px solid #999;
+}
+
+header .top ul li a {
+    color: #fff;
+    display: inline-block;
+    padding: 0 1.5rem;
+}
+
+@media only screen and (max-width:50em) {
+    html {
+        font-size: 62.5%;
+    }
+    header .top .tel, header .top ul li:nth-child(3), header .top ul li:nth-child(4) {
+        display: none;
+    }
+    header .main {
+        text-align: center;
+        padding: 0;
+    }
+    header .main .brand {
+        display: inline-block;
+        padding: 1rem 1.5rem;
+    }
+    header .main img {
+        width: 15rem;
+    }
+    header .main ul {
+        display: block;
+    }
+    header .main ul li:first-child {
+        display: none;
+    }
+    header .main ul li {
+        display: inline-block;
+    }
+    header .main ul li a {
+        height: 3rem;
+        line-height: 3rem;
+    }
+    section.jiaoyi {
+        padding: 1rem;
+        height: 14rem;
+    }
+    section.jiaoyi .jiaoyi-wrap {
+        width: 88%;
+    }
+    section.jiaoyi {
+        font-size: 2rem;
+    }
+    .jiaoyi-data {
+        text-align: center;
+        width: 100%;
+    }
+    .jiaoyi-report {
+        text-align: center;
+    }
+    section.feauter .mainItem {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        height: 8rem;
+        padding-top: .2rem;
+        margin-bottom: 2rem;
+    }
+    section.feauter .mainItem h3 {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        margin: 1rem 0 0 10%;
+    }
+    section.feauter .mainItem p {
+        margin: 0;
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        font-size: 1.8rem;
+        color: #999;
+    }
+    section.notice {
+        padding: 1rem;
+        background: #fff;
+        height: 3rem;
+        font-size: 1rem;
+        line-height: 1rem;
+        clear: both;
+    }
+    .productTitle {
+        border-left: 1px solid #eee;
+        padding-bottom: 2rem;
+    }
+    .productTitle h2 {
+        margin: 0;
+        padding: 1rem;
+    }
+    .product-content.clearfix dl {
+        border: 1px solid #eee;
+    }
+    .product-content.clearfix dt {
+        width: 35%;
+    }
+    .product-content.clearfix dt h3 span.big {
+        font-size: 2.2rem;
+    }
+    dd.product-content-main {
+        width: 65%;
+        padding: 1rem 0;
+    }
+    dd.goumai {
+        float: left;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .product-content.clearfix dd .buy button {
+        width: 80%;
+        height: 4rem;
+        font-size: 2rem;
+    }
+    .footer .brand {
+        display: none;
+    }
+    footer ul li .icon {
+        background: url(../img/cert1.png) no-repeat 0 0;
+        background-size: 450px 432px;
+    }
+    footer ul li .icon-zf {
+        width: 40px;
+        height: 25px;
+        background-position: -352px -44px;
+    }
+    footer ul li .icon-pc {
+        width: 83px;
+        height: 25px;
+        background-position: -105px -93px;
+    }
+    footer ul li .icon-vi {
+        width: 45px;
+        height: 25px;
+        background-position: -408px -88px;
+    }
+    footer ul li .icon-ve {
+        width: 67px;
+        height: 25px;
+        background-position: -386px -180px;
+    }
+    footer ul li .icon-wl {
+        width: 23px;
+        height: 25px;
+        background-position: -45px -47px;
+    }
+    footer ul li .icon-dz {
+        width: 73px;
+        height: 25px;
+        background-position: 0px -309px;
+    }
+    footer ul li .icon.icon-bj {
+        width: 40px;
+        background: url(../img/cert2.png) no-repeat 5px -3px;
+        height: 25px;
+    }
+    footer .footer-wrap {
+        text-align: center;
+        width: 73%;
+    }
+}
+
+@media only screen and (min-width:50em) and (max-width:64em) {
+    html {
+        font-size: 60%;
+    }
+    header .top ul li a {
+        padding: 0 1rem;
+    }
+    header .main {
+        text-align: center;
+        padding: 0;
+    }
+    header .main .brand {
+        display: inline-block;
+        padding: 1rem 1.5rem;
+    }
+    header .main img {
+        width: 15rem;
+    }
+    header .main ul {
+        display: block;
+    }
+    header .main ul li {
+        display: inline-block;
+    }
+    header .main ul li a {
+        height: 3rem;
+        line-height: 3rem;
+    }
+    section.jiaoyi {
+        height: 4rem;
+        font-size: 1.6rem;
+    }
+    .jiaoyi-data {
+        float: left;
+        margin-right: 4rem;
+    }
+    section.jiaoyi .jiaoyi-wrap {
+        width: 90%;
+    }
+    .jiaoyi-report {
+        float: right;
+    }
+    span.jiaoyi-money {
+        background: #f2f1f0;
+    }
+    section.feauter {
+        text-align: center;
+        width: 90%;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin: 1rem auto;
+    }
+    section.feauter .mainItem {
+        width: 30%;
+    }
+    section.feauter .mainItem h3 {
+        margin: 1rem 0;
+    }
+    section.feauter .mainItem p {
+        color: #555;
+    }
+    section.product.clearfix {
+        border-left: 1px solid #eee;
+    }
+    .product-content.clearfix dl {
+        height: 8rem;
+        border-bottom: 1px solid #eee;
+    }
+    .product-content.clearfix dt {
+        width: 25%;
+        border-right: 1px solid #eee;
+    }
+    .product-content.clearfix dt h3 span.big {
+        font-size: 3rem;
+    }
+    .product-content.clearfix dd.product-content-main {
+        border-right: 1px solid #eee;
+        width: 50%;
+    }
+    .product-content.clearfix dd {
+        border-right: 1px solid #eee;
+        width: 25%;
+        float: left;
+    }
+    .productTitle {
+        width: 100%;
+        border-bottom: 1px solid #eee;
+    }
+    .productTitle h2 {
+        display: inline-block;
+    }
+    .productTitle em {
+        margin-left: 1rem;
+    }
+    .product-content.clearfix {
+        width: 100%;
+    }
+    .product-content.clearfix dd .buy button {
+        padding: 1rem 4rem;
+    }
+    .footer .brand {
+        display: none;
+    }
+    .footer-wrap {
+        width: 497px;
+    }
+    footer ul li .icon {
+        background: url(../img/cert1.png) no-repeat 0 0;
+        background-size: 450px 432px;
+    }
+    footer ul li .icon-zf {
+        width: 40px;
+        height: 25px;
+        background-position: -352px -44px;
+    }
+    footer ul li .icon-pc {
+        width: 83px;
+        height: 25px;
+        background-position: -105px -93px;
+    }
+    footer ul li .icon-vi {
+        width: 45px;
+        height: 25px;
+        background-position: -408px -88px;
+    }
+    footer ul li .icon-ve {
+        width: 67px;
+        height: 25px;
+        background-position: -386px -180px;
+    }
+    footer ul li .icon-wl {
+        width: 23px;
+        height: 25px;
+        background-position: -45px -47px;
+    }
+    footer ul li .icon-dz {
+        width: 73px;
+        height: 25px;
+        background-position: 0px -309px;
+    }
+    footer ul li .icon.icon-bj {
+        width: 40px;
+        background: url(../img/cert2.png) no-repeat 5px -3px;
+        height: 25px;
+    }
+}
+
+@media only screen and (min-width:64em) {
+    html {
+        font-size: 52.5%;
+    }
+    header .main {
+        padding: 0;
+        height: 6rem;
+    }
+    header .main .brand {
+        float: left;
+        padding: 1rem 1.5rem;
+    }
+    header .main img {
+        width: 200px;
+    }
+    header .main ul {
+        float: right;
+    }
+    header .main ul li {
+        float: left;
+        border-left: 1px solid #f0ede9;
+    }
+    header .main ul li a {
+        height: 5.5rem;
+        line-height: 5.5rem;
+    }
+    section.jiaoyi {
+        height: 4rem;
+        font-size: 2rem;
+    }
+    .jiaoyi-data {
+        width: 33%;
+        float: left;
+        margin-right: 6rem;
+    }
+    section.jiaoyi .jiaoyi-wrap {
+        width: 90%;
+    }
+    .jiaoyi-report {
+        float: right;
+    }
+    span.jiaoyi-money {
+        background: #f2f1f0;
+    }
+    section.feauter {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    section.feauter .mainItem {
+        width: 30%;
+    }
+    section.feauter .mainItem h3 {
+        float: left;
+        margin: 0 2rem;
+        line-height: 78px;
+    }
+    section.feauter .mainItem p {
+        color: #555;
+    }
+    .productTitle {
+        float: left;
+        width: 20%;
+        padding: 1rem 0rem;
+        height: 40rem;
+        border-left: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+    }
+    .productTitle h2 {
+        margin-bottom: 4rem;
+    }
+    .productTitle em {
+        width: 100%;
+        margin: 2rem 0;
+        display: block;
+        text-align: center;
+    }
+    .product-content.clearfix {
+        float: left;
+        width: 80%;
+    }
+    .product-content.clearfix dl {
+        height: 8rem;
+        border-bottom: 1px solid #eee;
+    }
+    .product-content.clearfix dt h3 span.big {
+        font-size: 3rem;
+    }
+    .product-content.clearfix dt {
+        width: 25%;
+        border-right: 1px solid #eee;
+    }
+    .product-content.clearfix dd {
+        border-right: 1px solid #eee;
+        width: 25%;
+        float: left;
+    }
+    .product-content.clearfix dd.product-content-main {
+        border-right: 1px solid #eee;
+        width: 50%;
+    }
+    .product-content.clearfix dd .buy button {
+        padding: 1rem 4rem;
+    }
+    .footer-wrap {
+        width: 822px;
+    }
+    footer ul li .icon {
+        background: url(../img/cert1.png) no-repeat 0 0;
+    }
+    footer ul li .icon-zf {
+        width: 80px;
+        height: 54px;
+        background-position: -734px -90px;
+    }
+    footer ul li .icon-pc {
+        width: 160px;
+        height: 54px;
+        background-position: -215px -190px;
+    }
+    footer ul li .icon-vi {
+        width: 85px;
+        height: 54px;
+        background-position: -848px -180px;
+    }
+    footer ul li .icon-ve {
+        width: 135px;
+        height: 54px;
+        background-position: -800px -373px;
+    }
+    footer ul li .icon-wl {
+        width: 46px;
+        height: 54px;
+        background-position: -93px -95px;
+    }
+    footer ul li .icon-dz {
+        width: 150px;
+        height: 54px;
+        background-position: 0px -639px;
+    }
+    footer ul li .icon.icon-bj {
+        width: 40px;
+        background: url(../img/cert2.png) no-repeat 5px 10px;
+        height: 54px;
+    }
+}
+
+header .main ul li a {
+    display: inline-block;
+    padding: 0 3rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #7c7a65;
+    text-decoration: none;
+}
+
+header .main ul li a:hover, header .main ul li a:active {
+    color: #ffb300;
+    background-color: #f8f6f1;
+}
+
+
+/*网站主要内容*/
+
+.container {
+    clear: both;
+    width: 100%;
+}
+
+section.jiaoyi {
+    color: #fff;
+    background: #7c7364;
+}
+
+section.jiaoyi .jiaoyi-wrap {
+    margin: 0 auto;
+}
+
+.jiaoyi-data {
+    height: 4rem;
+    line-height: 4rem;
+}
+
+.jiaoyi-report {
+    line-height: 4rem;
+}
+
+.jiaoyi-report a {
+    color: #fff;
+}
+
+span.jiaoyi-money {
+    margin-left: 5px;
+    color: #ff9a00;
+    padding: 3px;
+}
+
+
+/*轮播图*/
+
+.p_container {
+    cursor: pointer;
+    width: 98%;
+    margin: 1rem auto;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.p_container .ul_photo img {
+    width: 100%;
+}
+
+.p_container .ul_photo a.photo {
+    z-index: 1;
+    display: none;
+    float: left;
+}
+
+.p_container .ul_photo a.photo.image_1 {
+    display: block;
+}
+
+.arrow a {
+    display: block;
+    width: 30px;
+    height: 60px;
+    position: absolute;
+    z-index: 3;
+    color: #fff;
+    line-height: 60px;
+    top: 50%;
+    margin-top: -30px;
+}
+
+.arrow a:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+a.prev {
+    left: 1rem;
+    background: url(../img/leftArrow.png) no-repeat center center rgba(0, 0, 0, 0.1);
+}
+
+a.next {
+    right: 1rem;
+    background: url(../img/rightArrow.png) no-repeat center center rgba(0, 0, 0, 0.1);
+}
+
+.dots {
+    position: absolute;
+    z-index: 1;
+    bottom: 25px;
+    left: 50%;
+    margin-left: -38px;
+    padding: 4px 8px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.dots span {
+    background-color: #fff;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    float: left;
+    margin: 0 4px;
+}
+
+
+/*feature*/
+
+section.feauter {
+    width: 90%;
+    margin: 1rem auto;
+}
+
+section.feauter .mainItem {
+    background: #fff;
+}
+
+section.feauter .mainItem h3 {
+    color: #ff9a00;
+    font-size: 3rem;
+}
+
+
+/*notice*/
+
+section.notice {
+    width: 86%;
+    margin: 0 auto;
+    padding: 1rem;
+    background: #fff;
+    height: 4rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    clear: both;
+}
+
+section.notice a.infomation {
+    width: 78%;
+    display: inline-block;
+    color: #666;
+    text-decoration: none;
+}
+
+section.notice span {
+    width: 50%;
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #000;
+    font-weight: bold;
+}
+
+section.notice a.more {
+    float: right;
+    color: #ff9a00;
+}
+
+
+/*product*/
+
+section.product.clearfix {
+    width: 86%;
+    margin: 1rem auto;
+    border-top: 2px solid #ff9a00;
+}
+
+.productTitle {
+    background: #f5f9fa;
+    border-right: 1px solid #eee;
+    text-align: center;
+}
+
+.productTitle h2 {
+    font-size: 2.4rem;
+    color: #635c51;
+    font-weight: normal;
+}
+
+.productTitle em {
+    font-size: 1.6rem;
+}
+
+.product-content.clearfix dl {
+    width: 100%;
+    float: left;
+    margin: 0;
+}
+
+.product-content.clearfix dt {
+    height: 8rem;
+    padding: 2rem;
+    float: left;
+    text-align: center;
+}
+
+.product-content.clearfix dt h3 {
+    margin: 0;
+    color: #555;
+}
+
+.product-content.clearfix dt h3 span.big {
+    color: #8b999d;
+}
+
+.product-content.clearfix dd.product-content-main {
+    float: left;
+    text-align: center;
+    margin-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.product-content.clearfix dd.product-content-main p.yuedin {
+    color: #222;
+    font-weight: 600;
+}
+
+.product-content.clearfix dd.product-content-main span.color {
+    color: #ff9a00;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+span.small {
+    color: #999;
+    font-weight: normal !important;
+}
+
+.product-content-main .info {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.product-content-main .money {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.product-content.clearfix dd {
+    margin: 0;
+    text-align: center;
+}
+
+.product-content.clearfix dd .buy {
+    line-height: 8rem;
+}
+
+.product-content.clearfix dd .buy button {
+    color: #fff;
+    background: #ff9a00;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.product-content.clearfix dd .buy button:hover {
+    background: #ffc468;
+}
+
+
+/*footer*/
+
+.footer {
+    clear: both;
+}
+
+.footer-content.clearfix {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #fff;
+    padding: 4rem 0 2rem 2rem;
+}
+
+.footer .brand {
+    background: url(../img/logo@1x.png) no-repeat;
+    float: left;
+    height: 60px;
+    width: 20%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.footer-content.clearfix ul {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    float: left;
+}
+
+.footer-content.clearfix ul a.title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.footer-content.clearfix ul li {
+    margin-bottom: 3px;
+}
+
+
+/*底部导航*/
+
+footer {
+    text-align: center;
+    width: 100%;
+    padding: 3rem 0 2rem;
+    background-color: #ededed;
+}
+
+.footer-wrap {
+    margin: 0 auto;
+}
+
+footer ul {
+    text-align: center;
+}
+
+footer ul li {
+    margin-bottom: 2rem;
+    float: left;
+}
+
+footer ul li .icon {
+    float: left;
+    margin-right: 1.5rem;
+}
+
+footer p {
+    clear: both;
+}
